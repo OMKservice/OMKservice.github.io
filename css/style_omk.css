@@ -146,6 +146,10 @@
     width: 460px;
 }
 
+#advantages h2 {
+    color: #000;
+}
+
 #advantages p {
     font-size: 16pt;
 }
@@ -166,9 +170,9 @@
     color: #000;
 }
 
-#inviteToAMeeting h5 {
+#inviteToAMeeting h2 {
     margin-bottom: 20px;
-    font-size: 32pt;
+    color: #000;
 }
 
 #inviteToAMeeting button > a,
@@ -179,7 +183,7 @@
 }
 
 #numBig span {
-    font-size: 32pt;
+    font-size: 28pt;
     margin: 0;
     display: block;
 }
@@ -187,7 +191,7 @@
 #numBig span.spanNumber {
     font-size: 250pt;
     line-height: 250pt;
-    height: 300pt;
+    height: 250pt;
     color: #bdccd4;
     font-family: Montserrat;
     font-weight: bold;
@@ -228,6 +232,10 @@
 
 #chosenUs a {
     padding: 30px 30px;
+    color: #000;
+}
+
+#chosenUs h2 {
     color: #000;
 }
 
