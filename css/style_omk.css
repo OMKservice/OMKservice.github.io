@@ -1,0 +1,507 @@
+/* Only omk stylesheets */
+
+/* Constants */
+
+::selection {
+    background: #fff;
+}
+
+.button-style {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    border: 1px solid transparent;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button-style:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-size: 50px 50px;
+    background-color: #f7ec33;
+    background-image: linear-gradient(135deg, #bdccd4 25%, transparent 25%, transparent 50%, #bdccd4 50%, #bdccd4 75%, transparent 75%, transparent);
+    transform: scale(0.93, 1) skewY(-2deg);
+    transition: transform .3s ease;
+}
+
+.button-style:hover:before {
+    transform: scale(1, 1) skewY(0deg);
+}
+
+.button-style span,
+.p-style {
+    position: relative;
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+.p-style {
+    height: 250px;
+    transform: scale(0.93, 1) skewY(2deg);
+}
+
+.button-style span:before,
+.p-style:before,
+.button-style span:after,
+.p-style:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 7px;
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+}
+
+.button-style span:before,
+.p-style:before {
+    top: 0;
+    border-top: 3px solid #000;
+}
+
+.button-style span:after,
+.p-style:after {
+    bottom: 0;
+    border-bottom: 3px solid #000;
+}
+
+/* All */
+
+.brand-name > img {
+    width: 158px;
+}
+
+.page a.icon-primary,
+.list-inline-xxs a,
+.list-inline-xxs a:hover,
+.list-inline-xxs a:active {
+    color: #000;
+}
+
+#list-bordered-first {
+    margin-top: 0;
+}
+
+.unit-body {
+    font-size: 12pt;
+}
+
+.unit-body button:hover {
+    background-color: #bdccd4;
+    cursor: pointer;
+}
+
+.unit-body img {
+    width: 36px;
+    margin-right: 10px;
+}
+
+.swiper-slide p {
+    font-size: 26pt;
+}
+
+.swiper-slide h2 {
+    font-size: 43pt;
+    font-weight: bold;
+}
+
+.swiper-slide .button {
+    font-size: 28pt;
+    font-weight: bold;
+    background: none;
+}
+
+#testIngener .unit-body {
+    position: absolute;
+    top: -140px;
+}
+
+#testIngener h2 {
+    font-size: 30pt;
+}
+
+#testIngener .image-centered {
+    text-align: right;
+}
+
+#testIngener figure img {
+    width: 295px;
+    height: 312px;
+}
+
+#testIngener .bg-decor {
+    position: absolute;
+    top: -60px;
+    right: -260px;
+}
+
+#testIngener .bg-decor img{
+    width: 460px;
+}
+
+#advantages p {
+    font-size: 16pt;
+}
+
+#whatUsefull {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: cover;
+}
+
+#whatUsefull .heading-decorated {
+    color: #fff;
+}
+
+#whatUsefull p {
+    font-size: 18pt;
+    color: #000;
+}
+
+#inviteToAMeeting h5 {
+    margin-bottom: 20px;
+    font-size: 32pt;
+}
+
+#inviteToAMeeting button > a,
+#inviteToAMeeting button > a:hover,
+#inviteToAMeeting button > a:active,
+#inviteToAMeeting button > a:visited {
+    color: #000;
+}
+
+#numBig span {
+    font-size: 32pt;
+    margin: 0;
+    display: block;
+}
+
+#numBig span.spanNumber {
+    font-size: 250pt;
+    line-height: 250pt;
+    height: 300pt;
+    color: #bdccd4;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+#numBig span.spanNumber:hover {
+    color: #ff0000;
+    cursor: default;
+    transition: color .35s ease;
+}
+
+#certificate,
+#certificate h2 {
+    color: #000;
+    font-size: 32pt;
+}
+
+.img-thumbnail-variant-3 .caption {
+    background-color: rgba(189, 204, 212, 0.6);
+}
+
+#certificate .caption p{
+    color: #000;
+    font-size: 24pt;
+}
+
+#certificate .col-sm-12 p {
+    font-size: 24pt;
+}
+
+#certificate .col-sm-12 p span {
+    font-weight: bold;
+}
+
+/*#chosenUs .owl-item {*/
+    /*border: 1px solid black;*/
+/*}*/
+
+#chosenUs a {
+    padding: 30px 30px;
+    color: #000;
+}
+
+#contacts {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contacts button {
+    margin-top: 20px;
+    box-shadow: none;
+}
+
+#contacts dd {
+    color: #000;
+}
+
+#contacts .form-wrap {
+    box-shadow: none;
+}
+
+.list-inline-sm li a {
+    color: #fff;
+}
+
+#contacts form input {
+    width: 400px;
+    border: 2px solid black;
+}
+
+.footer_phone {
+    font-size: 34pt;
+    color: #000;
+    font-weight: bold;
+}
+
+.footer_phone a,
+.footer_phone a:hover,
+.footer_phone a:active {
+    color: #000;
+}
+
+.ui-to-top, .ui-to-top:active, .ui-to-top:focus {
+    background: #f7ec33;
+}
+
+.ui-to-top::before {
+    color: #000;
+    font-weight: bold;
+}
+
+/* Media-запросы */
+@media screen and (max-width: 1400px){
+
+    #testIngener h2 {
+        font-size: 26pt;
+    }
+
+    #whatUsefull .heading-decorated {
+        font-size: 30pt;
+    }
+
+    #whatUsefull p {
+        font-size: 16pt;
+    }
+
+    .footer_phone {
+        font-size: 30pt;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    #testIngener h2 {
+        font-size: 20pt;
+    }
+
+    #testIngener p {
+        font-size: 14pt;
+    }
+
+    #advantages .col-md-12 {
+        text-align: center;
+    }
+
+    #numBig span.spanNumber {
+        font-size: 200pt;
+        line-height: 200pt;
+        height: 250px;
+    }
+
+    .footer_phone {
+        font-size: 24pt;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    #testIngener {
+        padding: 20% 0 15% 0;
+    }
+
+    #testIngener .bg-decor {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #testIngener .bg-decor img{
+        width: 400px;
+    }
+
+    #testIngener .image-centered {
+        position: relative;
+        padding: 20% 0;
+        margin-top: 20px;
+    }
+
+    #testIngener .image-centered > img {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+    }
+
+    #whatUsefull p {
+        font-size: 13.5pt;
+    }
+
+    #numBig span.spanNumber {
+        font-size: 150pt;
+        line-height: 150pt;
+        height: 200px;
+    }
+
+    .footer_phone {
+        font-size: 20pt;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .swiper-slide p {
+        font-size: 20pt;
+    }
+
+    .swiper-slide h2 {
+        font-size: 32pt;
+    }
+
+    .swiper-slide .button {
+        font-size: 20pt;
+    }
+
+    #testIngener {
+        padding: 30% 0 15% 0;
+    }
+
+    #testIngener .bg-decor {
+        display: none;
+    }
+
+    #testIngener .image-centered {
+        position: relative;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #testIngener .image-centered > img {
+        position: relative;
+    }
+
+    .p-style {
+        height: 125px;
+    }
+}
+
+@media screen and (max-width: 462px) {
+    .swiper-slide p {
+        font-size: 16pt;
+    }
+
+    .swiper-slide h2 {
+        font-size: 24pt;
+    }
+
+    .swiper-slide .button {
+        font-size: 16pt;
+    }
+
+    #testIngener {
+        padding: 40% 0 15% 0;
+    }
+
+    #testIngener .image-centered {
+        margin-top: 90px;
+    }
+
+    .p-style {
+        height: 150px;
+    }
+
+    #contacts form input {
+        width: 250px;
+        border: 2px solid black;
+    }
+}
+
+@media screen and (max-width: 372px) {
+    #testIngener {
+        padding: 60% 0 15% 0;
+    }
+
+    #testIngener .image-centered {
+        margin-top: 200px;
+    }
+
+    .p-style {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 308px) {
+
+    .swiper-slide p {
+        font-size: 12pt;
+    }
+
+    .swiper-slide h2 {
+        font-size: 18pt;
+    }
+
+    .swiper-slide .button {
+        font-size: 12pt;
+    }
+
+    #testIngener {
+        padding: 60% 0 15% 0;
+    }
+
+    .p-style {
+        height: 250px;
+    }
+
+    #inviteToAMeeting h5 {
+        font-size: 24pt;
+    }
+
+    #inviteToAMeeting span {
+        font-size: 16pt;
+    }
+
+    #certificate h2 {
+        font-size: 24pt;
+    }
+}
+
+@media screen and (max-width: 252px) {
+
+    #testIngener {
+        padding: 70% 0 15% 0;
+    }
+
+    #testIngener h2 {
+        font-size: 16pt;
+    }
+
+    #testIngener p {
+        font-size: 12pt;
+    }
+
+    .p-style {
+        height: 330px;
+    }
+
+}
