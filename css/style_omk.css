@@ -115,6 +115,10 @@
     cursor: pointer;
 }
 
+.list-bordered button:hover {
+    background-color: #bdccd4;
+}
+
 .list-bordered button span {
     font-size: 14pt;
 }
