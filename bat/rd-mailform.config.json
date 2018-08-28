@@ -1,8 +1,8 @@
 {
   "useSmtp": false,
-  "host": "stmp.gmail.com",              
+  "host": "stmp.gmail.com",
   "port": 465,													 
-  "username": "demo@gmail.com",					 
-  "password": "demopassword",						 
+  "username": "demo@gmail.com",
+  "password": "demopassword",
   "recipientEmail":  "shevchuk.vitaliy@chaynx.ru"
 }

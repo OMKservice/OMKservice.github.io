@@ -1,5 +1,7 @@
 <?php
 
+mb_internal_encoding("UTF-8");
+
 $formConfigFile = file_get_contents("rd-mailform.config.json");
 $formConfig = json_decode($formConfigFile, true);
 
@@ -67,10 +69,10 @@ try {
             $template);
     }
 
-    if (isset($_GET['email'])) {
+    if (isset($_GET['email-address'])) {
         $template = str_replace(
             array("<!-- #{MessageState} -->", "<!-- #{MessageDescription} -->"),
-            array("Email:", $_GET['email']),
+            array("Email:", $_GET['email-address']),
             $template);
     }
 
@@ -147,8 +149,14 @@ try {
     $mail->MsgHTML($template);
     $mail->send();
 
-    header('Location: https://omkservice.ru/ ');
-    die('MF000');
+    echo "
+        <script>
+            alert('Ok!');
+            window.location.replace('https://omkservice.ru/');
+        </script>
+    ";
+    //header('Location: https://omkservice.ru/ ');
+    //die('MF000');
 } catch (phpmailerException $e) {
     die('MF254');
 } catch (Exception $e) {
