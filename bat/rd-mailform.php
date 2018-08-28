@@ -67,6 +67,13 @@ try {
             $template);
     }
 
+    if (isset($_GET['email'])) {
+        $template = str_replace(
+            array("<!-- #{MessageState} -->", "<!-- #{MessageDescription} -->"),
+            array("Email:", $_GET['email']),
+            $template);
+    }
+
     preg_match("/(<!-- #\{BeginInfo\} -->)(.|\s)*?(<!-- #\{EndInfo\} -->)/", $template, $tmp, PREG_OFFSET_CAPTURE);
     foreach ($_POST as $key => $value) {
         if ($key != "counter" && $key != "email" && $key != "message" && $key != "form-type" && $key != "g-recaptcha-response" && !empty($value)){

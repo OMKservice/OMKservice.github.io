@@ -2,6 +2,10 @@
 
 /* Constants */
 
+button:hover, a:hover, input[type=submit]:hover {
+    cursor: pointer;
+}
+
 ::selection {
     background: #fff;
 }
@@ -15,6 +19,12 @@
     text-transform: uppercase;
     font-size: 20px;
     font-weight: bold;
+}
+
+.button-style a,
+.button-style a:hover,
+.button-style a:active {
+    color: inherit;
 }
 
 .button-style:before {
@@ -113,6 +123,12 @@
 
 .list-bordered button {
     cursor: pointer;
+}
+
+.list-bordered button a,
+.list-bordered button a:hover,
+.list-bordered button a:active {
+    color: inherit;
 }
 
 .list-bordered button:hover {
@@ -311,6 +327,10 @@
 .ui-to-top::before {
     color: #000;
     font-weight: bold;
+}
+
+#feedbackForm .custom-control-label {
+    font-size: 10px;
 }
 
 /* Media-запросы */
