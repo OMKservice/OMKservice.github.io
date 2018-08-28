@@ -4951,7 +4951,7 @@ button.close {
 .modal-dialog {
 	position: relative;
 	width: auto;
-	margin: 10px;
+	margin: 20px;
 	pointer-events: none;
 }
 
@@ -4962,9 +4962,9 @@ button.close {
 	pointer-events: auto;
 	background-color: #fff;
 	background-clip: padding-box;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	border-radius: 0.3rem;
-	outline: 0;
+	border: 0px solid rgba(0, 0, 0, 0.2);
+	border-radius: 0.0rem;
+	outline: none;
 }
 
 .modal-backdrop {
@@ -4974,7 +4974,7 @@ button.close {
 	bottom: 0;
 	left: 0;
 	z-index: 1110;
-	background-color: #000;
+	background-color:#000000;
 }
 
 .modal-backdrop.fade {
@@ -4982,14 +4982,14 @@ button.close {
 }
 
 .modal-backdrop.show {
-	opacity: 0.5;
+	opacity: 0.2;
 }
 
 .modal-header {
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
-	padding: 15px;
+	padding: 20px;
 	border-bottom: 1px solid #e9ecef;
 	border-top-left-radius: 0.3rem;
 	border-top-right-radius: 0.3rem;

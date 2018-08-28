@@ -10,6 +10,10 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Stylesheets-->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Fira+Sans:300,600,800,800i%7COpen+Sans:300,400,400i">
+	  <!-- Popupform Begin -->
+	  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style_omk.css">
+	  <!-- Popupform End -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_omk.css">
@@ -98,12 +102,12 @@
                               <div class="row">
                                   <div class="col-lg-8 ul-center">
                                       <p>Комплексные испытания инженерных систем,<br>пусконаладочные и строительно-монтажные работы</p>
+						
                                   </div>
                                   <div class="col-lg-4 ul-right">
-                                      <a href="tel:+791231234567"><button class="btn btn-primary">
-                                          <img src="images/omk/0_MENU_Button_icon.svg" alt="Phone">
-                                          <span>+7(912)312-34-56</span>
-                                      </button></a>
+	  
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#feedbackFormModal"> <img src="images/omk/0_MENU_Button_icon.svg" alt="Phone">
+                                          <span>+7(495)922-85-77</span> </button>
                                   </div>
                               </div>
                           </div>
@@ -119,55 +123,14 @@
                 <ul class="rd-navbar-items-list rd-navbar-search_collapsable"></ul>
                 <div class="rd-navbar-search_collapsable">
                   <ul class="rd-navbar-nav">
-                    <li><a href="index.html">О НАС</a>
-                      <ul class="rd-navbar-dropdown">
-                        <li><a href="index-variant-1.html">Home variant 1</a>
-                        </li>
-                        <li><a href="index-variant-2.html">Home variant 2</a>
-                        </li>
-                        <li><a href="index-variant-3.html">Home variant 3</a>
-                        </li>
-                        <li><a href="index-variant-4.html">Home variant 4</a>
-                        </li>
-                        <li><a href="index-variant-5.html">Home variant 5</a>
-                        </li>
-                        <li><a href="index-variant-6.html">Home variant 6</a>
-                        </li>
-                        <li><a href="index-variant-7.html">Home variant 7</a>
-                        </li>
-                      </ul>
+                    <li><a href="#team">О НАС</a>
+                    
                     </li>
-                    <li class="active"><a href="#">УСЛУГИ</a>
-                      <ul class="rd-navbar-dropdown">
-                        <li><a href="#">Headers</a>
-                          <ul class="rd-navbar-dropdown">
-                            <li><a href="header-default.html">Header Default</a></li>
-                            <li><a href="header-default-dark.html">Header Default Dark</a></li>
-                            <li><a href="header-modern.html">Header Modern</a></li>
-                            <li><a href="header-creative.html">Header Creative</a></li>
-                            <li><a href="index.html">Header Corporate</a></li>
-                            <li><a href="header-transparent.html">Header Transparent</a></li>
-                            <li><a href="header-minimal.html">Header Minimal</a></li>
-                            <li><a href="header-sidebar.html">Header Sidebar</a></li>
-                            <li><a href="header-sidebar-inverse.html">Header Sidebar Inverse</a></li>
-                          </ul>
-                        </li>
-                        <li><a href="#">Footers</a>
-                          <ul class="rd-navbar-dropdown">
-                            <li><a href="footer-default.html">Footer Default</a></li>
-                            <li><a href="footer-minimal.html">Footer Minimal</a></li>
-                            <li><a href="footer-modern.html">Footer Modern</a></li>
-                          </ul>
-                        </li>
-                      </ul>
+                    <!-- <li class="active"><a href="#services">_</a>
+					  </li> -->
+                    <li><a href="#advantages">УСЛУГИ</a>
                     </li>
-                    <li><a href="about.html">ПРЕИМУЩЕСТВА</a>
-                    </li>
-                    <li><a href="services.html">КОНТАКТЫ</a>
-                      <ul class="rd-navbar-dropdown">
-                        <li><a href="single-service.html">Single Service</a>
-                        </li>
-                      </ul>
+                    <li><a href="#form">КОНТАКТЫ</a>
                     </li>
                   </ul>
                 </div>
@@ -194,7 +157,8 @@
               <p data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentDiagonal&quot;, &quot;duration&quot;: 600, &quot;delay&quot;: 500 }">Снизим расходы на</p>
               <h2 data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentDiagonal&quot;, &quot;duration&quot;: 600, &quot;delay&quot;: 500 }">ПУСКОНАЛАДКУ И ИСПЫТАНИЯ  <br class="d-none d-lg-block"> ИНЖЕНЕРНЫХ СИСТЕМ</h2>
               <p data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentDiagonal&quot;, &quot;duration&quot;: 600, &quot;delay&quot;: 500 }">на 10% в год за 6 месяцев</p>
-              <a class="" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentDiagonal&quot;, &quot;duration&quot;: 400, &quot;delay&quot;: 400 }" href="#"><button class="button-style"><span>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</span></button></a>
+              <a class="" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentDiagonal&quot;, &quot;duration&quot;: 400, &quot;delay&quot;: 400 }" href="#"><button type="button" class="button-style" class="btn btn-primary" data-toggle="modal" data-target="#feedbackFormModal">
+				  <span>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</span></button></a>
             </div>
           </div>
           <div class="swiper-slide">
@@ -202,7 +166,7 @@
             <div class="swiper-slide-caption text-right">
               <h1 data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentDiagonal&quot;, &quot;duration&quot;: 600, &quot;delay&quot;: 500 }"><span class="text-lowercase heading-2 text-white">ООО</span><span>ОМКсервис</span></h1>
               <h3 data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentDiagonal&quot;, &quot;duration&quot;: 600, &quot;delay&quot;: 600 }">Экперт по управлению</h3>
-              <div class="group-lg group-middle" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentDiagonal&quot;, &quot;duration&quot;: 600, &quot;delay&quot;: 700 }"><button class="button-style" href="#"><span>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</span> </button>
+              <div class="group-lg group-middle" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentDiagonal&quot;, &quot;duration&quot;: 600, &quot;delay&quot;: 700 }"><button type="button" class="button-style" class="btn btn-primary" data-toggle="modal" data-target="#feedbackFormModal"><span>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</span> </button>
 				 
 				
 				</div>
@@ -236,7 +200,7 @@
       </div>
 
       <!-- Test ingener -->
-      <section id="testIngener" class="section-md bg-white decor-text" data-content="Offer">
+      <section id="testIngener" class="section-md bg-white decor-text" data-content="Offer"> <a name='team'></a>
         <div class="container">
           <div class="row justify-content-md-center flex-lg-row-reverse align-items-lg-center justify-content-lg-between row-50">
             <div class="col-md-9 col-lg-6">
@@ -256,12 +220,12 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> 
       </section>
 
       <!-- Процесс эксплуатации  -->
-      <section class="section bg-white section-lg text-center decor-text" id="advantages" data-content="Features">
-        <div class="container">
+      <section class="section bg-white section-lg text-center decor-text" id="advantages" data-content="Features"> 
+        <div class="container"> 
           <h2 class="wow fadeInUp"> <!--span class="text-transform-none">the</span--><span>Процесс ввода в эксплуатацию</span></h2>
           <div class="row justify-content-center row-60 offset-top-2">
             <div class="col-xl-2 col-md-6">
@@ -278,7 +242,7 @@
                 <div class="blurb-circle__icon"><span class="icon icon-circle icon-lg linear-icon-two wow fadeInUp"></span></div>
                 <div class="wow fadeInUp" data-wow-delay="0.25s">
                   <p class="blurb__title heading-6">Контроль</p>
-                  <p>пусконаладочных работ.</p>
+                  <p>пуско-<br>наладочных работ</p>
                 </div>
               </article>
             </div>
@@ -287,7 +251,7 @@
                 <div class="blurb-circle__icon"><span class="icon icon-circle icon-lg linear-icon-three wow fadeInUp"></span></div>
                 <div class="wow fadeInUp" data-wow-delay="0.25s">
                   <p class="blurb__title heading-6">Испытания</p>
-                  <p>отдельных узлов и агрегатов. </p>
+                  <p>отдельных узлов и агрегатов</p>
                 </div>
               </article>
             </div>
@@ -296,7 +260,7 @@
                 <div class="blurb-circle__icon"><span class="icon icon-circle icon-lg linear-icon-four wow fadeInUp"></span></div>
                 <div class="wow fadeInUp" data-wow-delay="0.25s">
                   <p class="blurb__title heading-6">Комплексные испытания</p>
-                  <p>систем.</p>
+                  <p>систем</p>
                 </div>
               </article>
             </div>
@@ -305,7 +269,7 @@
                 <div class="blurb-circle__icon"><span class="icon icon-circle icon-lg linear-icon-five wow fadeInUp"></span></div>
                 <div class="wow fadeInUp" data-wow-delay="0.25s">
                   <p class="blurb__title heading-6">Ввод объекта</p>
-                  <p>в эксплуатацию.</p>
+                  <p>в эксплуа-<br>тацию</p>
                 </div>
               </article>
             </div>
@@ -319,18 +283,18 @@
       </section>
 
       <!-- В чем польза -->
-      <section id="whatUsefull" class="section-lg bg-default text-center" style="background-image: url(images/omk/3_BG.svg)">
-        <div class="container">
+      <section id="whatUsefull" class="section-lg bg-default text-center" style="background-image: url(images/omk/3_BG.svg)"> 
+        <div class="container"> 
           <div class="row justify-content-sm-center">
-            <div class="col-md-10 col-xl-8">
+            <div class="col-md-10 col-xl-8"> 
               <h2 class="heading-decorated">В ЧЕМ ПОЛЬЗА?</h2>
               <div class="isotope row" data-isotope-layout="fitRows" data-isotope-group="gallery">
                 <div class="col-12 col-md-6 isotope-item" data-filter="Category 1">
-                  <div class="caption">
+                  <div class="caption"> 
                     <p class="heading-5 hover-top-element p-style">Cнижение стоимости и сроков ввода в эксплуатацию инженерных систем объекта</p>
                   </div>
                 </div>
-                <div class="col-12 col-md-6 isotope-item" data-filter="Category 1">
+                <div class="col-12 col-md-6 isotope-item" data-filter="Category 1"> 
                   <div class="caption">
                     <p class="heading-5 hover-top-element p-style">Cнижение стоимости эксплуатации инженерных систем объекта от 8 до 20% в год на протяжении всего срока работы объекта</p>
                   </div>
@@ -346,8 +310,9 @@
         <div class="container">
           <div class="row row-50 justify-content-sm-center">
             <div class="col-md-10">
-              <h2>Приглашаем на встречу в наш офис</h2>
-                <a href="#"><button class="button-style"><span>Запись на встречу</span></button></a>
+              <h3>Приглашаем на встречу в наш офис</h3>
+				<p> </p>
+                <button type="button" class="button-style" class="btn btn-primary" data-toggle="modal" data-target="#feedbackFormModal"><span>Запись на встречу</span></button>
             </div>
           </div>
         </div>
@@ -355,7 +320,7 @@
 
       <!-- numBig -->
       <section id="numBig" class="section-lg bg-default text-center">
-        <div class="container">
+        <div class="container"><a name='advantages'></a>
           <div class="row row-50 justify-content-sm-center">
             <div class="col-md-4">
               <span class="spanNumber">7</span>
@@ -391,19 +356,19 @@
                                 </figure>
                                 <div class="caption">
                                     <p class="heading-5 hover-top-element">14000 OHSAS</p>
-                                    <p class="small hover-bottom-element">...</p>
+                                    <p class="small hover-bottom-element"> cтандарт систем менеджмента промышленной безопасности и охраны труда (СМПБиОТ)</p>
                                 </div></a>
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 1"><a class="img-thumbnail-variant-3" href="single-portfolio.html"><img src="images/omk/6_CERT_01.jpeg" alt="" width="418" height="315"/>
                                 <div class="caption">
-                                    <p class="heading-5 hover-top-element">18000 Tier III</p>
-                                    <p class="small hover-bottom-element">...</p>
+                                    <p class="heading-5 hover-top-element">Uptime Tier Specialist</p>
+                                    <p class="small hover-bottom-element">глобальный стандарт для надлежащего проектирования, строительства и эксплуатации ЦОД</p>
                                 </div></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-12">
-                        <h2>ПРИМЕНЯЕМЫЕ СТАНДАРТЫ</h2>
+                        <h3>ПРИМЕНЯЕМЫЕ СТАНДАРТЫ</h3>
                     </div>
                     <div class="col-sm-12">
                         <p><span>ГОСТ Р МЭК 62 381-2016</span> Системы автоматизации в обрабатывающей промышленности</p>
@@ -465,8 +430,8 @@
       </section>
 
       <!-- Contacts -->
-      <section id="contacts" class="section-md bg-default decor-text" data-content="Contact" style="background-image: url(images/omk/6_FORM_bg.svg)">
-        <div class="container">
+      <section id="contacts" class="section-md bg-default decor-text" data-content="Contact" style="background-image: url(images/omk/6_FORM_bg.png)">
+        <div class="container"> <a name='form'></a>
           <div class="row row-50">
             <div class="col-md-7 col-lg-5">
               <h4>КОНТАКТЫ</h4>
@@ -497,7 +462,7 @@
                 <li>
                   <dl class="list-terms-inline">
                     <dt>Email</dt>
-                    <dd>team@omkservice.ru</dd>
+                    <a href="mailto:team@omkservice.ru"><dd>team@omkservice.ru</dd></a>
                   </dl>
                 </li>
                 <li>
@@ -513,7 +478,7 @@
             <div class="col-md-5 col-lg-7">
               <h4>ОСТАЛИСЬ ВОПРОСЫ?</h4>
               <!-- RD Mailform-->
-              <form class="rd-mailform rd-mailform_style-1 form-shadow" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+              <form class="rd-mailform rd-mailform_style-1 form-shadow" data-form-output="form-output-global" data-form-type="contact" action="bat/rd-mailform.php">
                 <div class="form-wrap form-wrap_icon linear-icon-man">
                   <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
                   <label class="form-label" for="contact-name">Имя</label>
@@ -528,7 +493,77 @@
           </div>
         </div>
       </section>
+				
+		<!-- Форма обратной связи в модальном окне -->
+<div class="modal" id="feedbackFormModal" tabindex="0" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel">Форма заказа звонка</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+ 
+        <!-- Форма обратной связи -->
+        <form id="feedbackForm" action="process/process.php" method="post" novalidate>
+          <div class="form-row">
+            <div class="col-sm-6">
+              <!-- Имя пользователя -->
+              <div class="form-group">
+                <label for="name" class="control-label">Как обращаться</label>
+                <input id="name" type="text" name="name" class="form-control" value="" placeholder="Имя" minlength="2" maxlength="30" required="required">
+                <div class="invalid-feedback"></div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <!-- Email пользователя -->
+              <div class="form-group">
+                <label for="email" class="control-label">Email-адрес</label>
+                <input id="email" type="email" name="email" required="required" class="form-control" value="" placeholder="Email-адрес">
+                <div class="invalid-feedback"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Сообщение пользователя 
+          <div class="form-group">
+            <label for="message" class="control-label">Сообщение (не менее 20 символов)</label>
+            <textarea id="message" name="message" class="form-control" rows="3" placeholder="Сообщение (не менее 20 символов)" minlength="20" maxlength="500" required="required"></textarea>
+            <div class="invalid-feedback"></div>
+          </div>
+-->
 
+          <!-- Пользовательское солашение -->
+          <div class="form-group">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" name="agree" class="custom-control-input" id="customCheck">
+              <label class="custom-control-label" for="customCheck"><p>Нажимая кнопку, я <a href="#"></a> даю своё согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных».</p></label>
+            </div>
+          </div>
+          <!-- Сообщение -->
+          <div class="alert alert-danger form-error d-none">
+            Произошли ошибки! Исправьте их и отправьте форму ещё раз.
+          </div>
+          <!-- Индикация загрузки данных формы на сервер -->
+          <div class="progress mb-2 d-none">
+            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0">
+              <span class="sr-only">0%</span>
+            </div>
+          </div>
+          <!-- Кнопка для отправки формы -->
+          <button type="submit" class="btn btn-primary float-right" >Отправить</button>
+        </form>
+                
+        <!-- Сообщение об успешной отправки формы -->
+        <div class="alert alert-success form-success mb-0 d-none">Мы благодарим Вас за обращение. Запрос успешно отправлен. Нажмите на <a class="form-success-link" href="#">ссылку</a>, чтобы отправить ещё одно сообщение.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+		
       <!-- Page Footer-->
       <footer class="footer-corporate bg-gray-darkest">
         <div class="container">
@@ -547,9 +582,16 @@
       </footer>
     </div>
 
+	
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
-    <!-- Javascript-->
+	     <!-- Javascript-->
+	  <!--Popupform Script Beginning -->
+	  <script src="/vendors/jquery/jquery-3.3.1.min.js"></script>
+<script src="/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+	  	  <!--Popupform Script End -->
+	  
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
   </body>
