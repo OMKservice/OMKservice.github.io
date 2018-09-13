@@ -96,20 +96,19 @@
                 <div class="rd-navbar-top-panel__content">
                   <div class="rd-navbar-top-panel__content-bottom rd-navbar-content_middle rd-navbar-content_justify">
                     <!-- RD Navbar Brand-->
-                    <div class="rd-navbar-brand rd-navbar-fixed--hidden"><a class="brand-name" href="index.html"><img src="images/omk/0_MENU_Logo.svg" alt="" width="108" height="40" srcset="images/omk/0_MENU_Logo.svg 2x"/></a></div>
+                    <div class="rd-navbar-brand rd-navbar-fixed--hidden"><a class="brand-name" href="/"><img src="images/omk/0_MENU_Logo.svg" alt="" width="108" height="40" srcset="images/omk/0_MENU_Logo.svg 2x"/></a></div>
                       <div class="list-bordered">
                           <div class="container">
                               <div class="row">
                                   <div class="col-lg-8 ul-center">
-                                      <p>Комплексные испытания инженерных систем,<br>пусконаладочные и строительно-монтажные работы</p>
-						
+                                      <p>Комплексный контроль жизненного цикла инженерного<br>оборудования: СМР, ПНР, комплексные испытания, технадзор,<br>энергоаудит, эксплуатация.</p>
                                   </div>
                                   <div class="col-lg-4 ul-right">
-	  
-                                    <button type="button" class="btn btn-primary"> <img src="images/omk/0_MENU_Button_icon.svg" alt="Phone">
-                                        <span><a href="#contacts">+7(495)922-85-77</a></span>
+
+                                    <button id="ContactsPhone" type="button" class="btn btn-primary" data-toggle="modal" data-target="#feedbackFormModal"> <img src="images/omk/0_MENU_Button_icon.svg" alt="Phone">
+                                        <span>+7(495)922-85-77</span>
                                     </button>
-                                    <span>vadim.zhirnov@omkontrol.ru</span>
+                                    <a href="mailto:support@omkontrol.com"><span>support@omkontrol.com</span></a>
                                   </div>
                               </div>
                           </div>
@@ -125,14 +124,11 @@
                 <ul class="rd-navbar-items-list rd-navbar-search_collapsable"></ul>
                 <div class="rd-navbar-search_collapsable">
                   <ul class="rd-navbar-nav">
-                    <li><a href="#team">О НАС</a>
-                    
+                    <li><a id="toAboutUs" href="#testIngener">О НАС</a>
                     </li>
-                    <!-- <li class="active"><a href="#services">_</a>
-					  </li> -->
-                    <li><a href="#advantagesA">УСЛУГИ</a>
+                    <li><a id="toServices" href="#advantages">УСЛУГИ</a>
                     </li>
-                    <li><a href="#form">КОНТАКТЫ</a>
+                    <li><a id="toContacts" href="#contacts">КОНТАКТЫ</a>
                     </li>
                   </ul>
                 </div>
@@ -159,16 +155,17 @@
               <p data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentDiagonal&quot;, &quot;duration&quot;: 600, &quot;delay&quot;: 500 }">Снизим расходы на</p>
               <h2 data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentDiagonal&quot;, &quot;duration&quot;: 600, &quot;delay&quot;: 500 }">ПУСКОНАЛАДКУ И ИСПЫТАНИЯ  <br class="d-none d-lg-block"> ИНЖЕНЕРНЫХ СИСТЕМ</h2>
               <p data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentDiagonal&quot;, &quot;duration&quot;: 600, &quot;delay&quot;: 500 }">на 10% в год за 6 месяцев</p>
-              <a class="" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentDiagonal&quot;, &quot;duration&quot;: 400, &quot;delay&quot;: 400 }" href="#"><button type="button" class="button-style" class="btn btn-primary" data-toggle="modal" data-target="#feedbackFormModal">
+              <a class="" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentDiagonal&quot;, &quot;duration&quot;: 400, &quot;delay&quot;: 400 }" href="#"><button id="swiper-button-1" type="button" class="button-style" class="btn btn-primary" data-toggle="modal" data-target="#feedbackFormModal">
 				  <span>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</span></button></a>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="swiper-slide-img" style="background-image: url(images/omk/1_PHOTO_02.jpg);" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperSlideZoomOut&quot;, &quot;duration&quot;: 900 }"></div>
             <div class="swiper-slide-caption text-right">
-              <h1 data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentDiagonal&quot;, &quot;duration&quot;: 600, &quot;delay&quot;: 500 }"><span class="text-lowercase heading-2 text-white">ООО</span><span>ОМКсервис</span></h1>
-              <h3 data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentDiagonal&quot;, &quot;duration&quot;: 600, &quot;delay&quot;: 600 }">Экперт по управлению</h3>
-              <div class="group-lg group-middle" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentDiagonal&quot;, &quot;duration&quot;: 600, &quot;delay&quot;: 700 }"><button type="button" class="button-style" class="btn btn-primary" data-toggle="modal" data-target="#feedbackFormModal"><span>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</span> </button>
+              <h2 data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentDiagonal&quot;, &quot;duration&quot;: 600, &quot;delay&quot;: 600 }">Технадзор в строительстве</h2>
+              <p data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentDiagonal&quot;, &quot;duration&quot;: 600, &quot;delay&quot;: 500 }">который реально работает</p>
+              <p data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentDiagonal&quot;, &quot;duration&quot;: 600, &quot;delay&quot;: 500 }">Снизим затраты и сократим сроки</p>
+              <div class="group-lg group-middle" data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentDiagonal&quot;, &quot;duration&quot;: 600, &quot;delay&quot;: 700 }"><button id="swiper-button-2" type="button" class="button-style" class="btn btn-primary" data-toggle="modal" data-target="#feedbackFormModal"><span>ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</span> </button>
 				 
 				
 				</div>
@@ -234,8 +231,8 @@
               <article class="blurb blurb-circle blurb-circle_centered">
                 <div class="blurb-circle__icon"><span class="icon icon-circle icon-lg linear-icon-one wow fadeInUp"></span></div>
                 <div class="wow fadeInUp" data-wow-delay="0.25s">
-                  <p class="blurb__title heading-6">Контроль</p>
-                  <p>строительно-<br>монтажных работ.</p>
+                  <p class="blurb__title heading-6">ТЕХНАДЗОР</p>
+                  <p>за строительством.</p>
                 </div>
               </article>
             </div>
@@ -243,8 +240,9 @@
               <article class="blurb blurb-circle blurb-circle_centered">
                 <div class="blurb-circle__icon"><span class="icon icon-circle icon-lg linear-icon-two wow fadeInUp"></span></div>
                 <div class="wow fadeInUp" data-wow-delay="0.25s">
-                  <p class="blurb__title heading-6">Контроль</p>
-                  <p>пуско-<br>наладочных работ</p>
+                  <p>Контроль</p>
+                  <p class="blurb__title heading-6">ПУСКОНАЛАДОЧНЫХ</p>
+                  <p>работ.</p>
                 </div>
               </article>
             </div>
@@ -252,8 +250,8 @@
               <article class="blurb blurb-circle blurb-circle_centered">
                 <div class="blurb-circle__icon"><span class="icon icon-circle icon-lg linear-icon-three wow fadeInUp"></span></div>
                 <div class="wow fadeInUp" data-wow-delay="0.25s">
-                  <p class="blurb__title heading-6">Испытания</p>
-                  <p>отдельных узлов и агрегатов</p>
+                  <p class="blurb__title heading-6">КОМПЛЕКСНЫЕ ИСПЫТАНИЯ</p>
+                  <p>систем.</p>
                 </div>
               </article>
             </div>
@@ -261,8 +259,8 @@
               <article class="blurb blurb-circle blurb-circle_centered">
                 <div class="blurb-circle__icon"><span class="icon icon-circle icon-lg linear-icon-four wow fadeInUp"></span></div>
                 <div class="wow fadeInUp" data-wow-delay="0.25s">
-                  <p class="blurb__title heading-6">Комплексные испытания</p>
-                  <p>систем</p>
+                  <p class="blurb__title heading-6">Ввод объекта</p>
+                  <p>в эксплуатацию.</p>
                 </div>
               </article>
             </div>
@@ -270,14 +268,14 @@
               <article class="blurb blurb-circle blurb-circle_centered">
                 <div class="blurb-circle__icon"><span class="icon icon-circle icon-lg linear-icon-five wow fadeInUp"></span></div>
                 <div class="wow fadeInUp" data-wow-delay="0.25s">
-                  <p class="blurb__title heading-6">Ввод объекта</p>
-                  <p>в эксплуа-<br>тацию</p>
+                  <p class="blurb__title heading-6">ЭКСПЛУАТАЦИЯ</p>
+                  <p>объекта.</p>
                 </div>
               </article>
             </div>
             <div class="col-xl-4 col-md-12 offset-xl-6">
               <button class="button-style">
-                <span><a href="docs/600.MRK.00X_presentation_omk.pptx">ПОДРОБНЕЕ ОБ ИСПЫТАНИЯХ</a></span>
+                <span><a href="docs/600.MRK.00X_presentation_omk.pptx">ПОДРОБНЕЕ ОБ УСЛУГАХ</a></span>
               </button>
             </div>
           </div>
@@ -288,7 +286,7 @@
       <section id="whatUsefull" class="section-lg bg-default text-center" style="background-image: url(images/omk/3_BG.svg)"> 
         <div class="container"> 
           <div class="row justify-content-sm-center">
-            <div class="col-md-10 col-xl-8"> 
+            <div class="col-md-10 col-xl-10">
               <h2 class="heading-decorated">В ЧЕМ ПОЛЬЗА?</h2>
               <div class="isotope row" data-isotope-layout="fitRows" data-isotope-group="gallery">
                 <div class="col-12 col-md-6 isotope-item" data-filter="Category 1">
@@ -296,7 +294,7 @@
                     <p class="heading-5 hover-top-element p-style">Cнижение стоимости и сроков ввода в эксплуатацию инженерных систем объекта</p>
                   </div>
                 </div>
-                <div class="col-12 col-md-6 isotope-item" data-filter="Category 1"> 
+                <div class="col-12 col-md-6 isotope-item" data-filter="Category 1">
                   <div class="caption">
                     <p class="heading-5 hover-top-element p-style">Cнижение стоимости эксплуатации инженерных систем объекта от 8 до 20% в год на протяжении всего срока работы объекта</p>
                   </div>
@@ -314,7 +312,7 @@
             <div class="col-md-10">
               <h3>Приглашаем на встречу в наш офис</h3>
 				<p> </p>
-                <button type="button" class="button-style" class="btn btn-primary" data-toggle="modal" data-target="#feedbackFormModal"><span>Запись на встречу</span></button>
+                <button id="InviteButton" type="button" class="button-style" class="btn btn-primary" data-toggle="modal" data-target="#feedbackFormModal"><span>Запись на встречу</span></button>
             </div>
           </div>
         </div>
@@ -341,7 +339,7 @@
       </section>
 
       <!-- Sertificate -->
-        <section id="certificate" class="section-lg text-center" style="background-color: #A0ADB7;">
+      <section id="certificate" class="section-lg text-center" style="background-color: #A0ADB7;">
             <div class="container">
                 <h2>Сертификаты</h2>
                 <div class="isotope-wrap row row-70">
@@ -349,7 +347,7 @@
                         <div class="isotope row" data-isotope-layout="fitRows" data-isotope-group="gallery">
                             <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 1"><a class="img-thumbnail-variant-3" href="single-portfolio.html"><img src="images/omk/6_CERT_01.jpeg" alt="" width="418" height="315"/>
                                 <div class="caption">
-                                    <p class="heading-5 hover-top-element">ИСО 9001 ИСО</p>
+                                    <p class="heading-5 hover-top-element">ИСО 9001</p>
                                     <p class="small hover-bottom-element">Системы менеджмента качества</p>
                                 </div></a>
                             </div>
@@ -363,21 +361,21 @@
                             </div>
                             <div class="col-12 col-md-6 col-lg-4 isotope-item" data-filter="Category 1"><a class="img-thumbnail-variant-3" href="single-portfolio.html"><img src="images/omk/6_CERT_01.jpeg" alt="" width="418" height="315"/>
                                 <div class="caption">
-                                    <p class="heading-5 hover-top-element">Uptime Tier Specialist</p>
-                                    <p class="small hover-bottom-element">глобальный стандарт для надлежащего проектирования, строительства и эксплуатации ЦОД</p>
+                                    <p class="heading-5 hover-top-element">ИСО 14001 </p>
+                                    <p class="small hover-bottom-element">Системы экологического менеджмента</p>
                                 </div></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12">
-                        <h3>ПРИМЕНЯЕМЫЕ СТАНДАРТЫ</h3>
-                    </div>
-                    <div class="col-sm-12">
-                        <p><span>ГОСТ Р МЭК 62 381-2016</span> Системы автоматизации в обрабатывающей промышленности</p>
-                        <p><span>ГОСТ 16325-88</span> и инструкция по проектированию зданий и помещений для электронно-вычислительных машин <span>СН 512-78; EIA/TIA-942;</span></p>
-                        <p><span>BICSI 002 2010</span> ‘‘Data Center Design and Implementation Best Practices’’</p>
-                        <p><span>Data Center Site Infrastructure TIER Standart: Topology</span></p>
-                    </div>
+                    <!--<div class="col-sm-12">-->
+                        <!--<h3>ПРИМЕНЯЕМЫЕ СТАНДАРТЫ</h3>-->
+                    <!--</div>-->
+                    <!--<div class="col-sm-12">-->
+                        <!--<p><span>ГОСТ Р МЭК 62 381-2016</span> Системы автоматизации в обрабатывающей промышленности</p>-->
+                        <!--<p><span>ГОСТ 16325-88</span> и инструкция по проектированию зданий и помещений для электронно-вычислительных машин <span>СН 512-78; EIA/TIA-942;</span></p>-->
+                        <!--<p><span>BICSI 002 2010</span> ‘‘Data Center Design and Implementation Best Practices’’</p>-->
+                        <!--<p><span>Data Center Site Infrastructure TIER Standart: Topology</span></p>-->
+                    <!--</div>-->
                 </div>
             </div>
         </section>
@@ -396,10 +394,10 @@
               <div class="owl-item">
                 <!-- Post classic-->
                 <article class="post-classic post-minimal">
-                  <a class="post-minimal-image" href="image-post.html">
+                  <a class="post-minimal-image" href="https://www.sberbank.ru/ru/person">
                     <img src="images/omk/sber_logo.png" alt="" width="418" height="315"/>
                     <div class="post-classic-body">
-                      <p>Два Центра Обработки Данных, 100%-ая отказоустойчивость которых подтверждена значимым международным сертификатом Uptime TIER III</p>
+                      <p>2 объекта 30 и 20 МВт. Проведение контроля СМР, ПНР  и комплексных испытаний всех инженерных систем объекта.</p>
                     </div>
                   </a>
                 </article>
@@ -407,10 +405,10 @@
               <div class="owl-item">
                 <!-- Post classic-->
                 <article class="post-classic post-minimal">
-                  <a class="post-minimal-image" href="standard-post.html">
+                  <a class="post-minimal-image" href="https://www.croc.ru/">
                     <img src="images/omk/croc_logo.png" alt="" width="418" height="315"/>
                     <div class="post-classic-body">
-                      <p>Два Центра Обработки Данных, 100%-ая отказоустойчивость которых подтверждена значимым международным сертификатом Uptime TIER III</p>
+                      <p>Объект 8 МВт. Проведение автоматизации эксплуатации инженерных систем объекта.</p>
                     </div>
                   </a>
                 </article>
@@ -418,10 +416,32 @@
               <div class="owl-item">
                 <!-- Post classic-->
                 <article class="post-classic post-minimal">
-                  <a class="post-minimal-image" href="gallery-post.html">
+                  <a class="post-minimal-image" href="https://www.dataspace.ru/">
                     <img src="images/omk/dataspace_logo.png" alt="" width="418" height="315"/>
                     <div class="post-classic-body">
-                      <p>Два Центра Обработки Данных, 100%-ая отказоустойчивость которых подтверждена значимым международным сертификатом Uptime TIER III</p>
+                      <p>Объект 9 МВт. Безаварийная эксплуатация всех инженерных систем объекта.</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+              <div class="owl-item">
+                <!-- Post classic-->
+                <article class="post-classic post-minimal">
+                  <a class="post-minimal-image" href="https://www.schneider-electric.ru/ru/">
+                    <img src="images/omk/schneider.png" alt="" width="418" height="315"/>
+                    <div class="post-classic-body">
+                      <p>Автоматизация процессов эксплуатации объектов компании.</p>
+                    </div>
+                  </a>
+                </article>
+              </div>
+              <div class="owl-item">
+                <!-- Post classic-->
+                <article class="post-classic post-minimal">
+                  <a class="post-minimal-image" href="https://www.clouddc.ru/">
+                    <img src="images/omk/clouddc.png" alt="" width="418" height="315"/>
+                    <div class="post-classic-body">
+                      <p>Объект 2 МВт. Автоматизация процессов эксплуатации.</p>
                     </div>
                   </a>
                 </article>
@@ -440,14 +460,7 @@
               <ul class="list-sm contact-info">
                 <li class="contacts-phone">
                   <dl class="list-terms-inline">
-                    <dt>Поддержка для клиентов</dt>
-                    <dd class="footer_phone"><a href="tel:#">+7 (495) 999-99-99</a></dd>
-                  </dl>
-                </li>
-                <li>
-                  <dl class="list-terms-inline">
-                    <dt>Отдел продаж</dt>
-                    <dd class="footer_phone"><a href="tel:#">+7 (495) 999-99-99</a></dd>
+                    <dd class="footer_phone"><a href="tel:+74959228577">+7(495)922-85-77</a></dd>
                   </dl>
                 </li>
                 <li>
@@ -464,15 +477,15 @@
                 <li>
                   <dl class="list-terms-inline">
                     <dt>Email</dt>
-                    <a href="mailto:team@omkservice.ru"><dd>team@omkservice.ru</dd></a>
+                    <a href="mailto:support@omkontrol.com"><dd>support@omkontrol.com</dd></a>
                   </dl>
                 </li>
                 <li>
                   <ul class="list-inline-sm">
-                    <li><a class="icon-sm fa-facebook icon" href="#"></a></li>
-                    <li><a class="icon-sm fa-whatsapp icon" href="#"></a></li>
-                    <li><a class="icon-sm fa-linkedin icon" href="#"></a></li>
-                    <li><a class="icon-sm fa-windows icon" href="#"></a></li>
+                    <li><a class="icon-sm fa-facebook icon" href="https://www.facebook.com/omkservice/"></a></li>
+                    <li><a class="icon-sm fa-instagram icon" href="https://www.instagram.com/expert.omk/"></a></li>
+                    <li><a class="icon-sm fa-linkedin icon" href="http://linkedin.com/company/omkservis"></a></li>
+                    <li><a class="icon-sm fa-vk icon" href="https://vk.com/omkservice"></a></li>
                   </ul>
                 </li>
               </ul>
@@ -482,18 +495,12 @@
               <!-- RD Mailform-->
               <form class="rd-mailform rd-mailform_style-1 form-shadow" id="rd-mailform">
 
-                <!-- Hidden Required Fields -->
-                <input type="hidden" name="project_name" value="OMKservice">
-                <input type="hidden" name="admin_email" value="vadim.zhirnov@omkontrol.ru">
-                <input type="hidden" name="form_subject" value="Обратный звонок">
-                <!-- END Hidden Required Fields -->
-
                 <div class="form-wrap form-wrap_icon linear-icon-man">
-                  <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required" required>
+                  <input class="form-input" id="contact-name" type="text" name="name" required>
                   <label class="form-label" for="contact-name">Имя</label>
                 </div>
                 <div class="form-wrap form-wrap_icon linear-icon-envelope">
-                  <input class="form-input" id="contact-phone" type="tel" name="phone" data-constraints="@Phone @Required" required>
+                  <input class="form-input" id="contact-phone" type="tel" name="phone" required>
                   <label class="form-label" for="contact-phone">Телефон</label>
                 </div>
                 <button class="button-style" type="submit"><span>&nbsp;&nbsp;Отправить&nbsp;&nbsp;</span></button>
@@ -509,7 +516,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="myModalLabel">Форма заказа звонка</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">×</span>
                 </button>
               </div>
@@ -517,12 +524,6 @@
 
                 <!-- Форма обратной связи -->
                 <form id="feedbackForm">
-
-                  <!-- Hidden Required Fields -->
-                  <input type="hidden" name="project_name" value="OMKservice">
-                  <input type="hidden" name="admin_email" value="vadim.zhirnov@omkontrol.ru">
-                  <input type="hidden" name="form_subject" value="Заявка с сайта">
-                  <!-- END Hidden Required Fields -->
 
                   <div class="form-row">
                     <div class="col-sm-6">
@@ -535,9 +536,11 @@
                     </div>
                     <div class="col-sm-6">
                       <!-- Email пользователя -->
-                      <div class="form-group">
-                        <label for="email" class="control-label">Email-адрес</label>
+                      <div class="form-group" id="changedGroup">
+                        <label id="form-group-label-email" for="email" class="control-label">Email-адрес</label>
                         <input id="email" type="email" name="email" required="required" class="form-control" value="" placeholder="Email-адрес">
+                        <label id="form-group-label-phone" class="control-label" for="form-phone">Телефон</label>
+                        <input class="form-control" id="form-phone" value="" type="tel" name="form-phone" placeholder="Телефон" required>
                         <div class="invalid-feedback"></div>
                       </div>
                     </div>
@@ -550,23 +553,9 @@
                       <label class="custom-control-label" for="customCheck"><p>Нажимая кнопку, я <a href="#"></a> даю своё согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных».</p></label>
                     </div>
                   </div>
-                  <!-- Сообщение -->
-                  <div class="alert alert-danger form-error d-none">
-                    Произошли ошибки! Исправьте их и отправьте форму ещё раз.
-                  </div>
-                  <!-- Индикация загрузки данных формы на сервер -->
-                  <div class="progress mb-2 d-none">
-                    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0">
-                      <span class="sr-only">0%</span>
-                    </div>
-                  </div>
                   <!-- Кнопка для отправки формы -->
                   <input type="submit" class="btn btn-primary float-right" value="Отправить">
-                  <!--<button type="submit" class="btn btn-primary float-right" >Отправить</button>-->
                 </form>
-
-                <!-- Сообщение об успешной отправки формы -->
-                <div class="alert alert-success form-success mb-0 d-none">Мы благодарим Вас за обращение. Запрос успешно отправлен. Нажмите на <a class="form-success-link" href="#">ссылку</a>, чтобы отправить ещё одно сообщение.</div>
               </div>
             </div>
           </div>
@@ -578,27 +567,18 @@
           <div class="footer-corporate__inner">
             <p class="rights"><span>© </span><span id="copyright-year"></span> Текст, графические и фото материалы <span>ООО «ОМКонтроль»</span>, 2009-2018</p>
             <ul class="list-inline-xxs">
-              <li><a class="icon icon-xxs icon-gray-darker fa fa-facebook" href="#"></a></li>
-              <li><a class="icon icon-xxs icon-gray-darker fa fa-twitter" href="#"></a></li>
-              <li><a class="icon icon-xxs icon-gray-darker fa fa-google-plus" href="#"></a></li>
-              <li><a class="icon icon-xxs icon-gray-darker fa fa-vimeo" href="#"></a></li>
-              <li><a class="icon icon-xxs icon-gray-darker fa fa-youtube" href="#"></a></li>
-              <li><a class="icon icon-xxs icon-gray-darker fa fa-pinterest" href="#"></a></li>
+              <li><a class="icon icon-xxs icon-gray-darker fa fa-facebook" href="https://www.facebook.com/omkservice/"></a></li>
+              <li><a class="icon icon-xxs icon-gray-darker fa fa-instagram" href="https://www.instagram.com/expert.omk/"></a></li>
+              <li><a class="icon icon-xxs icon-gray-darker fa fa-linkedin" href="http://linkedin.com/company/omkservis"></a></li>
+              <li><a class="icon icon-xxs icon-gray-darker fa fa-vk" href="https://vk.com/omkservice"></a></li>
             </ul>
           </div>
         </div>
       </footer>
     </div>
 
-	
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
-	     <!-- Javascript-->
-	  <!--Popupform Script Beginning -->
-	  <!--<script src="/vendors/jquery/jquery-3.3.1.min.js"></script>-->
-<!--<script src="/vendors/bootstrap/js/bootstrap.min.js"></script>-->
-<!--<script src="/js/main.js"></script>-->
-	  	  <!--Popupform Script End -->
 	  
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>

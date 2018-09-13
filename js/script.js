@@ -3564,12 +3564,34 @@
             url: "/mail.php",
             data: th.serialize()
         }).done(function() {
-            alert("Заявка отправлена!");
+            alert("Ваша заявка принята, наш сотрудник свяжется с Вами в ближайшее время.");
             setTimeout(function () {
                 th.trigger("reset");
+                $("#close").click();
             }, 1000);
         });
         return false;
+    });
+
+    $("#toAboutUs, #toContacts, #toContactsPhone, #toServices").click(function (event) {
+        event.preventDefault();
+        //забираем идентификатор бока с атрибута href
+        var id  = $(this).attr('href'), top = $(id).offset().top;
+
+        $('body,html').animate({scrollTop: top}, 1500);
+
+    });
+
+    $("#ContactsPhone, #InviteButton").click(function () {
+    	$("#changedGroup").empty();
+    	$("#changedGroup").append('<label class="control-label" for="form-phone">Телефон</label>\n' +
+            						'<input class="form-control" id="form-phone" value="" type="tel" name="form-phone" placeholder="Телефон" required>');
+    });
+
+    $("#swiper-button-1, #swiper-button-2").click(function () {
+        $("#changedGroup").empty();
+        $("#changedGroup").append('<label for="email" class="control-label">Email-адрес</label>\n' +
+            						'<input id="email" type="email" name="email" required="required" class="form-control" value="" placeholder="Email-адрес">');
     });
 
 }());

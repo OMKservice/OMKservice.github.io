@@ -1,6 +1,6 @@
 {
   "useSmtp": false,
-  "host": "stmp.gmail.com",
+  "host": "smtp.gmail.com",
   "port": 465,													 
   "username": "demo@gmail.com",
   "password": "demopassword",

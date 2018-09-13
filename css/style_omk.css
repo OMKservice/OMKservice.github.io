@@ -2,6 +2,13 @@
 
 /* Constants */
 
+::selection {
+    background: #000 !important; /* Safari */
+}
+::-moz-selection {
+    background: #000 !important; /* Firefox */
+}
+
 button:hover, a:hover, input[type=submit]:hover {
     cursor: pointer;
 }
@@ -37,11 +44,22 @@ button:hover, a:hover, input[type=submit]:hover {
     background-size: 50px 50px;
     background-color: #f7ec33;
     background-image: linear-gradient(135deg, #bdccd4 25%, transparent 25%, transparent 50%, #bdccd4 50%, #bdccd4 75%, transparent 75%, transparent);
+    -ms-transform: scale(0.93, 1) skewY(-2deg);
+    -webkit-transform: scale(0.93, 1) skewY(-2deg);
+    -o-transform: scale(0.93, 1) skewY(-2deg);
+    -moz-transform: scale(0.93, 1) skewY(-2deg);
     transform: scale(0.93, 1) skewY(-2deg);
+    -webkit-transition: -webkit-transform .3s ease;
+    -o-transition: -o-transform .3s ease;
+    -moz-transition: -moz-transform .3s ease;
     transition: transform .3s ease;
 }
 
 .button-style:hover:before {
+    -ms-transform: scale(1, 1) skewY(0deg);
+    -webkit-transform: scale(1, 1) skewY(0deg);
+    -o-transform: scale(1, 1) skewY(0deg);
+    -moz-transform: scale(1, 1) skewY(0deg);
     transform: scale(1, 1) skewY(0deg);
 }
 
@@ -54,6 +72,10 @@ button:hover, a:hover, input[type=submit]:hover {
 
 .p-style {
     height: 250px;
+    -ms-transform: scale(0.93, 1) skewY(2deg);
+    -webkit-transform: scale(0.93, 1) skewY(2deg);
+    -o-transform: scale(0.93, 1) skewY(2deg);
+    -moz-transform: scale(0.93, 1) skewY(2deg);
     transform: scale(0.93, 1) skewY(2deg);
 }
 
@@ -114,6 +136,7 @@ button:hover, a:hover, input[type=submit]:hover {
 
 .list-bordered .ul-center {
     text-align: center;
+    font-weight: bold;
 }
 
 
@@ -125,9 +148,9 @@ button:hover, a:hover, input[type=submit]:hover {
     cursor: pointer;
 }
 
-.list-bordered button a,
-.list-bordered button a:hover,
-.list-bordered button a:active {
+.list-bordered a,
+.list-bordered a:hover,
+.list-bordered a:active {
     color: inherit;
 }
 
@@ -192,7 +215,12 @@ button:hover, a:hover, input[type=submit]:hover {
 }
 
 #advantages p {
+    font-size: 14pt;
+}
+
+#advantages p .heading-6 {
     font-size: 16pt;
+    font-weight: bold;
 }
 
 #whatUsefull {
@@ -241,6 +269,9 @@ button:hover, a:hover, input[type=submit]:hover {
 #numBig span.spanNumber:hover {
     color: #ff0000;
     cursor: default;
+    -webkit-transition: color .35s ease;
+    -o-transition: color .35s ease;
+    -moz-transition: color .35s ease;
     transition: color .35s ease;
 }
 
@@ -288,11 +319,18 @@ button:hover, a:hover, input[type=submit]:hover {
 
 #contacts button {
     margin-top: 20px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
     box-shadow: none;
 }
 
-#contacts dd {
+#contacts dd,
+#contacts h4 {
     color: #000;
+}
+
+#contacts .list-terms-inline {
+    font-weight: bold;
 }
 
 #contacts .form-wrap {
@@ -385,12 +423,13 @@ button:hover, a:hover, input[type=submit]:hover {
         text-align: left;
     }
 
-    .list-bordered .ul-right {
+    .list-bordered .ul-right a {
+        display: block;
         margin-top: 20px;
     }
 
     #testIngener {
-        padding: 20% 0 15% 0;
+        padding: 25% 0 10% 0;
     }
 
     #testIngener .bg-decor {
